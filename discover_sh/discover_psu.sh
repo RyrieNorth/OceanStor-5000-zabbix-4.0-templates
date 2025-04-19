@@ -1,11 +1,14 @@
 #!/bin/bash
 
-USER="minitor_user"    # SNMP (USM) 用户名称
-AUTH="SHA"            # SNMP (USM) 鉴权加密方式
-AUTH_PASS="Aa123456!"    #SNMP (USM) 鉴权密码
-PRIV="AES"        # SNMP (USM) 数据加密方式
-PRIV_PASS="Aa123456!"    # SNMP (USM) 加密密码
-HOST="$1"
+# SNMP 配置
+HOST="$1"  # 目标设备的IP地址
+
+# SNMPv3 认证信息
+USER="test_user"  # SNMP 用户名
+AUTH_PROTO="SHA"  # 认证协议
+AUTH_PASS="Aa123456!"  # 认证密码
+PRIV_PROTO="AES"  # 加密协议
+PRIV_PASS="Aa123456!!"  # 加密密码
 BASE_OID="1.3.6.1.4.1.34774.4.1.23.5.3.1.2"    # 华为存储PSU信息私有OID
 CACHE="/tmp/psu_oid_cache.txt"
 

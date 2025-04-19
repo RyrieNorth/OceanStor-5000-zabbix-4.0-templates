@@ -8,7 +8,7 @@ import threading
 def run_snmpwalk(host, oid):
     cmd = [
         'snmpwalk', '-v3', '-u', 'test_user', '-l', 'authPriv',
-        '-a', 'SHA', '-A', 'Gzbbn@cloud', '-x', 'AES', '-X', 'Gzbbn@Cloud',
+        '-a', 'SHA', '-A', 'Aa123456!', '-x', 'AES', '-X', 'Aa123456!!',
         host, oid
     ]
     try:

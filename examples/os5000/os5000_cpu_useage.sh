@@ -6,9 +6,9 @@ HOST="$1"  # 目标设备的IP地址
 # SNMPv3 认证信息
 USER="test_user"  # SNMP 用户名
 AUTH_PROTO="SHA"  # 认证协议
-AUTH_PASS="Gzbbn@cloud"  # 认证密码
+AUTH_PASS="Aa123456!"  # 认证密码
 PRIV_PROTO="AES"  # 加密协议
-PRIV_PASS="Gzbbn@Cloud"  # 加密密码
+PRIV_PASS="Aa123456!!"  # 加密密码
 
 # OID 定义：CPU使用率
 CPU_USEAGE_1="1.3.6.1.4.1.34774.4.1.23.5.2.1.8.2.48.65"  # CPU 1 使用率 OID
