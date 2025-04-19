@@ -2,7 +2,7 @@
 
 ## 华为存储基础配置
 
-````bash
+```bash
 # 添加USM用户（即便是内网，也强力建议使用 snmp v3 来保证数据安全性！）
 admin:/>add snmp usm user_name=monitor_user authenticate_protocol=SHA private_protocol=AES user_level=read_only
 Please input your authenticate password:*********
@@ -34,7 +34,7 @@ bash discover_eth.sh 172.16.100.100 > eth_name.sh && chmod +x eth_name.sh
 
 # 发现PSU
 bash discover_psu.sh 172.16.100.100 > psu_name.sh && chmod +x psu_name.sh
-````
+```
 
 ## 采集 snmp 信息
 
