@@ -1,12 +1,12 @@
 #!/bin/bash
 
-USER="test_user"
-AUTH="SHA"
-AUTH_PASS="Gzbbn@cloud"
-PRIV="AES"
-PRIV_PASS="Gzbbn@Cloud"
+USER="minitor_user"    # SNMP (USM) 用户名称
+AUTH="SHA"            # SNMP (USM) 鉴权加密方式
+AUTH_PASS="Aa123456!"    #SNMP (USM) 鉴权密码
+PRIV="AES"        # SNMP (USM) 数据加密方式
+PRIV_PASS="Aa123456!"    # SNMP (USM) 加密密码
 HOST="$1"
-BASE_OID="1.3.6.1.4.1.34774.4.1.23.5.3.1.2"
+BASE_OID="1.3.6.1.4.1.34774.4.1.23.5.3.1.2"    # 华为存储PSU信息私有OID
 CACHE="/tmp/psu_oid_cache.txt"
 
 # 获取 SNMP 数据
@@ -31,4 +31,5 @@ done < <(grep 'STRING:' "$CACHE")
 json="${json}]}"
 
 # 输出 JSON（确保无语法错误）
-echo "$json" | python -m json.tool
+output=$(echo "$json" | python -m json.tool)
+echo "echo '$output'"
