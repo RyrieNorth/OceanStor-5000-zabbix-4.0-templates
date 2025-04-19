@@ -10,7 +10,7 @@
     <hosts>
         <host>
             <host>OceanStor 5510 v5</host>
-            <name>OceanStor 5510 v5（10.70.1.250 ）</name>
+            <name>OceanStor 5510 v5（172.16.100.100）</name>
             <description/>
             <proxy/>
             <status>0</status>
