@@ -1,5 +1,13 @@
 # OceanStor-5000-zabbix-4.0-templates
 
+## 监控机环境依赖
+
+```bash
+# 请确保正确安装snmp-utils
+yum install -y snmp-utils
+snmpwalk -v
+```
+
 ## 华为存储基础配置
 
 ```bash
