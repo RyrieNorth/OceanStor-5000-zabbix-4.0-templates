@@ -31,5 +31,5 @@ done < <(grep 'STRING:' "$CACHE")
 json="${json}]}"
 
 # 输出 JSON
-echo "$json" | python -m json.tool
-
+output=$(echo "$json" | python -m json.tool)
+echo "echo '$output'"
