@@ -1,12 +1,12 @@
 #!/bin/bash
 
-USER="test_user"
-AUTH="SHA"
-AUTH_PASS="Gzbbn@cloud"
-PRIV="AES"
-PRIV_PASS="Gzbbn@Cloud"
+USER="minitor_user"    # SNMP (USM) 用户名称
+AUTH="SHA"            # SNMP (USM) 鉴权加密方式
+AUTH_PASS="Aa123456!"    #SNMP (USM) 鉴权密码
+PRIV="AES"        # SNMP (USM) 数据加密方式
+PRIV_PASS="Aa123456!"    # SNMP (USM) 加密密码
 HOST="$1"
-BASE_OID="1.3.6.1.4.1.34774.4.1.23.5.1.1.4"  # 修改为 DISK 的 OID
+BASE_OID="1.3.6.1.4.1.34774.4.1.23.5.1.1.4"  # 华为存储磁盘信息私有OID
 CACHE="/tmp/disk_oid_cache.txt"
 
 # 获取 SNMP 数据
