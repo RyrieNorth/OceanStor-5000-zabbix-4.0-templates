@@ -1,5 +1,28 @@
 # OceanStor-5000-zabbix-4.0-templates
 
+## 华为存储基础配置
+
+````bash
+# 添加USM用户（即便是内网，也强力建议使用 snmp v3 来保证数据安全性！）
+admin:/>add snmp usm user_name=monitor_user authenticate_protocol=SHA private_protocol=AES user_level=read_only
+Please input your authenticate password:*********
+Please input your authenticate password again:********
+Please input your private password:**********
+Please input your private password again:*********
+CAUTION: You are advised to set the USM account using secure authentication protocol SHA and data encryption protocol AES.
+Do you wish to continue?(y/n)y
+Command executed successfully.
+
+# 修改snmp缓存
+admin:/>change snmp cache update_time=5 #5至60分钟。系统默认值为10分钟。
+Command executed successfully.
+
+# 设置SNMP服务的安全策略：网管软件IP被锁定时间：10秒。
+# 由于同一时间发送的请求比较多，会被存储设备的网管系统标记为暴力破解后 Ban IP，这里将锁定时间改为10秒
+admin:/>change snmp safe_strategy lock_time=10
+Command executed successfully.
+```
+
 ## 采集基本信息
 
 ```bash
@@ -11,7 +34,7 @@ bash discover_eth.sh 172.16.100.100 > eth_name.sh && chmod +x eth_name.sh
 
 # 发现PSU
 bash discover_psu.sh 172.16.100.100 > psu_name.sh && chmod +x psu_name.sh
-```
+````
 
 ## 采集 snmp 信息
 

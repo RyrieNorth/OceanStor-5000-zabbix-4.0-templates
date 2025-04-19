@@ -4,7 +4,7 @@
 HOST="$1"  # 目标设备的IP地址
 
 # SNMPv3 认证信息
-USER="test_user"  # SNMP 用户名
+USER="monitor_user"  # SNMP 用户名
 AUTH_PROTO="SHA"  # 认证协议
 AUTH_PASS="Aa123456!"  # 认证密码
 PRIV_PROTO="AES"  # 加密协议

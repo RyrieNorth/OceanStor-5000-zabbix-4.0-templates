@@ -7,7 +7,7 @@ import threading
 
 def run_snmpwalk(host, oid):
     cmd = [
-        'snmpwalk', '-v3', '-u', 'test_user', '-l', 'authPriv',
+        'snmpwalk', '-v3', '-u', 'monitor_user', '-l', 'authPriv',
         '-a', 'SHA', '-A', 'Aa123456!', '-x', 'AES', '-X', 'Aa123456!!',
         host, oid
     ]

@@ -8,7 +8,7 @@ import time
 
 def run_snmpwalk(host, oid):
     cmd = [
-        'snmpwalk', '-v3', '-u', 'test_user', '-l', 'authPriv',
+        'snmpwalk', '-v3', '-u', 'monitor_user', '-l', 'authPriv',
         '-a', 'SHA', '-A', 'Gzbbn@cloud', '-x', 'AES', '-X', 'Gzbbn@Cloud',
         host, oid
     ]
