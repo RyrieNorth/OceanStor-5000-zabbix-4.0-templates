@@ -10,7 +10,7 @@
     <templates>
         <template>
             <template>OceanStor 5510 V5 Template</template>
-            <name>10.70.1.250</name>
+            <name>172.16.100.100</name>
             <description/>
             <groups>
                 <group>
@@ -46,7 +46,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>os5000.cpu.use[10.70.1.250]</key>
+                    <key>os5000.cpu.use[172.16.100.100]</key>
                     <delay>30s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
@@ -107,7 +107,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>os5000.disk.10.70.1.250.discovery</key>
+                    <key>os5000.disk.172.16.100.100.discovery</key>
                     <delay>30s</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -139,7 +139,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>os5000.disk.info[10.70.1.250,health,&quot;{#DISK_NAME}&quot;]</key>
+                            <key>os5000.disk.info[172.16.100.100,health,&quot;{#DISK_NAME}&quot;]</key>
                             <delay>30s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -201,7 +201,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>os5000.disk.info[10.70.1.250,status,&quot;{#DISK_NAME}&quot;]</key>
+                            <key>os5000.disk.info[172.16.100.100,status,&quot;{#DISK_NAME}&quot;]</key>
                             <delay>30s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -261,9 +261,9 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{OceanStor 5510 V5 Template:os5000.disk.info[10.70.1.250,status,&quot;{#DISK_NAME}&quot;].last()}&lt;&gt;27</expression>
+                            <expression>{OceanStor 5510 V5 Template:os5000.disk.info[172.16.100.100,status,&quot;{#DISK_NAME}&quot;].last()}&lt;&gt;27</expression>
                             <recovery_mode>1</recovery_mode>
-                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.disk.info[10.70.1.250,status,&quot;{#DISK_NAME}&quot;].last()}=27</recovery_expression>
+                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.disk.info[172.16.100.100,status,&quot;{#DISK_NAME}&quot;].last()}=27</recovery_expression>
                             <name>磁盘  [{#DISK_NAME}] 状态异常（当前状态码: {ITEM.LASTVALUE}）</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
@@ -277,9 +277,9 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{OceanStor 5510 V5 Template:os5000.disk.info[10.70.1.250,health,&quot;{#DISK_NAME}&quot;].last()}&lt;&gt;1</expression>
+                            <expression>{OceanStor 5510 V5 Template:os5000.disk.info[172.16.100.100,health,&quot;{#DISK_NAME}&quot;].last()}&lt;&gt;1</expression>
                             <recovery_mode>1</recovery_mode>
-                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.disk.info[10.70.1.250,health,&quot;{#DISK_NAME}&quot;].last()}=1</recovery_expression>
+                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.disk.info[172.16.100.100,health,&quot;{#DISK_NAME}&quot;].last()}=1</recovery_expression>
                             <name>磁盘 {#DISK_NAME} 健康状态异常</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
@@ -319,7 +319,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>os5000.eth.10.70.1.250.discovery</key>
+                    <key>os5000.eth.172.16.100.100.discovery</key>
                     <delay>30s</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -351,7 +351,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>os5000.eth.info[10.70.1.250,status,&quot;{#ETH_NAME}&quot;]</key>
+                            <key>os5000.eth.info[172.16.100.100,status,&quot;{#ETH_NAME}&quot;]</key>
                             <delay>30s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -411,9 +411,9 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{OceanStor 5510 V5 Template:os5000.eth.info[10.70.1.250,status,&quot;{#ETH_NAME}&quot;].last()}&lt;&gt;10</expression>
+                            <expression>{OceanStor 5510 V5 Template:os5000.eth.info[172.16.100.100,status,&quot;{#ETH_NAME}&quot;].last()}&lt;&gt;10</expression>
                             <recovery_mode>1</recovery_mode>
-                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.eth.info[10.70.1.250,status,&quot;{#ETH_NAME}&quot;].last()}=10</recovery_expression>
+                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.eth.info[172.16.100.100,status,&quot;{#ETH_NAME}&quot;].last()}=10</recovery_expression>
                             <name>以太网光口  [{#ETH_NAME}] 链路断开（当前状态码: {ITEM.LASTVALUE}）</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
@@ -453,7 +453,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>os5000.fc.10.70.1.250.discovery</key>
+                    <key>os5000.fc.172.16.100.100.discovery</key>
                     <delay>30s</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -485,7 +485,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>os5000.fc.info[10.70.1.250,status,&quot;{#FC_NAME}&quot;]</key>
+                            <key>os5000.fc.info[172.16.100.100,status,&quot;{#FC_NAME}&quot;]</key>
                             <delay>30s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -545,9 +545,9 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{OceanStor 5510 V5 Template:os5000.fc.info[10.70.1.250,status,&quot;{#FC_NAME}&quot;].last()}&lt;&gt;10</expression>
+                            <expression>{OceanStor 5510 V5 Template:os5000.fc.info[172.16.100.100,status,&quot;{#FC_NAME}&quot;].last()}&lt;&gt;10</expression>
                             <recovery_mode>1</recovery_mode>
-                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.fc.info[10.70.1.250,status,&quot;{#FC_NAME}&quot;].last()}=10</recovery_expression>
+                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.fc.info[172.16.100.100,status,&quot;{#FC_NAME}&quot;].last()}=10</recovery_expression>
                             <name>FC  [{#FC_NAME}] 链路断开（当前状态码: {ITEM.LASTVALUE}）</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
@@ -587,7 +587,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>os5000.psu.10.70.1.250.discovery</key>
+                    <key>os5000.psu.172.16.100.100.discovery</key>
                     <delay>30s</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -619,7 +619,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>os5000.psu.info[10.70.1.250,health,&quot;{#PSU_NAME}&quot;]</key>
+                            <key>os5000.psu.info[172.16.100.100,health,&quot;{#PSU_NAME}&quot;]</key>
                             <delay>30s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -681,7 +681,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>os5000.psu.info[10.70.1.250,status,&quot;{#PSU_NAME}&quot;]</key>
+                            <key>os5000.psu.info[172.16.100.100,status,&quot;{#PSU_NAME}&quot;]</key>
                             <delay>30s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -741,9 +741,9 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{OceanStor 5510 V5 Template:os5000.psu.info[10.70.1.250,health,&quot;{#PSU_NAME}&quot;].last()}&lt;&gt;1</expression>
+                            <expression>{OceanStor 5510 V5 Template:os5000.psu.info[172.16.100.100,health,&quot;{#PSU_NAME}&quot;].last()}&lt;&gt;1</expression>
                             <recovery_mode>1</recovery_mode>
-                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.psu.info[10.70.1.250,status,&quot;{#PSU_NAME}&quot;].last()}=1</recovery_expression>
+                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.psu.info[172.16.100.100,status,&quot;{#PSU_NAME}&quot;].last()}=1</recovery_expression>
                             <name>PSU {#PSU_NAME} 健康状态异常</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
@@ -757,9 +757,9 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{OceanStor 5510 V5 Template:os5000.psu.info[10.70.1.250,status,&quot;{#PSU_NAME}&quot;].last()}&lt;&gt;27</expression>
+                            <expression>{OceanStor 5510 V5 Template:os5000.psu.info[172.16.100.100,status,&quot;{#PSU_NAME}&quot;].last()}&lt;&gt;27</expression>
                             <recovery_mode>1</recovery_mode>
-                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.psu.info[10.70.1.250,status,&quot;{#PSU_NAME}&quot;].last()}=27</recovery_expression>
+                            <recovery_expression>{OceanStor 5510 V5 Template:os5000.psu.info[172.16.100.100,status,&quot;{#PSU_NAME}&quot;].last()}=27</recovery_expression>
                             <name>PSU 电源 [{#PSU_NAME}] 状态异常（当前状态码: {ITEM.LASTVALUE}）</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
@@ -820,9 +820,9 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{OceanStor 5510 V5 Template:os5000.cpu.use[10.70.1.250].last()}&gt;80</expression>
+            <expression>{OceanStor 5510 V5 Template:os5000.cpu.use[172.16.100.100].last()}&gt;80</expression>
             <recovery_mode>1</recovery_mode>
-            <recovery_expression>{OceanStor 5510 V5 Template:os5000.cpu.use[10.70.1.250].last()}&lt;80</recovery_expression>
+            <recovery_expression>{OceanStor 5510 V5 Template:os5000.cpu.use[172.16.100.100].last()}&lt;80</recovery_expression>
             <name>存储服务器 CPU 总使用率过高！</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
