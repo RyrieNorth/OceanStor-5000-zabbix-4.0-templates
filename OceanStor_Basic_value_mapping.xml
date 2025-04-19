@@ -1,0 +1,92 @@
+<zabbix_export>
+    <version>4.0</version>
+    <date>2025-04-16T00:00:00Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template_OceanStor</template>
+            <name>Template_OceanStor</name>
+            <value_map>
+                <value_map_name>hwInfoHealthStatus</value_map_name>
+                <mappings>
+                    <mapping>
+                        <value>1</value>
+                        <newvalue>Normal</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>2</value>
+                        <newvalue>Fault</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>3</value>
+                        <newvalue>Pre-Fail</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>4</value>
+                        <newvalue>Partially Broken</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>5</value>
+                        <newvalue>Degraded</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>6</value>
+                        <newvalue>Bad Sectors Found</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>7</value>
+                        <newvalue>Bit Errors Found</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>8</value>
+                        <newvalue>Consistent</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>9</value>
+                        <newvalue>Inconsistent</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>10</value>
+                        <newvalue>Busy</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>11</value>
+                        <newvalue>No Input</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>12</value>
+                        <newvalue>Low Battery</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>13</value>
+                        <newvalue>Single Link Fault</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>14</value>
+                        <newvalue>Invalid</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>15</value>
+                        <newvalue>Write Protect</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>16</value>
+                        <newvalue>Single Link</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>17</value>
+                        <newvalue>No Redundant Link</newvalue>
+                    </mapping>
+                    <mapping>
+                        <value>18</value>
+                        <newvalue>Offline</newvalue>
+                    </mapping>
+                </mappings>
+            </value_map>
+        </template>
+    </templates>
+</zabbix_export>

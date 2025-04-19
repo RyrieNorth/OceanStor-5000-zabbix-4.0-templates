@@ -1,0 +1,126 @@
+<zabbix_export>
+<version>4.0</version>
+<value_maps>
+    <value_map>
+        <name>hwInfoRunningStatus</name>
+        <mappings>
+            <mapping><value>1</value><newvalue>Normal</newvalue></mapping>
+            <mapping><value>2</value><newvalue>Running</newvalue></mapping>
+            <mapping><value>3</value><newvalue>Not running</newvalue></mapping>
+            <mapping><value>4</value><newvalue>Not existed</newvalue></mapping>
+            <mapping><value>5</value><newvalue>Sleep in high temperature</newvalue></mapping>
+            <mapping><value>6</value><newvalue>Starting</newvalue></mapping>
+            <mapping><value>7</value><newvalue>Power failure protection</newvalue></mapping>
+            <mapping><value>8</value><newvalue>Spin down</newvalue></mapping>
+            <mapping><value>9</value><newvalue>Started</newvalue></mapping>
+            <mapping><value>10</value><newvalue>Link Up</newvalue></mapping>
+            <mapping><value>11</value><newvalue>Link Down</newvalue></mapping>
+            <mapping><value>12</value><newvalue>Powering on</newvalue></mapping>
+            <mapping><value>13</value><newvalue>Powered off</newvalue></mapping>
+            <mapping><value>14</value><newvalue>Pre-copy</newvalue></mapping>
+            <mapping><value>15</value><newvalue>Copyback</newvalue></mapping>
+            <mapping><value>16</value><newvalue>Reconstruction</newvalue></mapping>
+            <mapping><value>17</value><newvalue>Expansion</newvalue></mapping>
+            <mapping><value>18</value><newvalue>Unformatted</newvalue></mapping>
+            <mapping><value>19</value><newvalue>Formatting</newvalue></mapping>
+            <mapping><value>20</value><newvalue>Unmapped</newvalue></mapping>
+            <mapping><value>21</value><newvalue>Initial synchronizing</newvalue></mapping>
+            <mapping><value>22</value><newvalue>Consistent</newvalue></mapping>
+            <mapping><value>23</value><newvalue>Synchronizing</newvalue></mapping>
+            <mapping><value>24</value><newvalue>Synchronized</newvalue></mapping>
+            <mapping><value>25</value><newvalue>Unsynchronized</newvalue></mapping>
+            <mapping><value>26</value><newvalue>Split</newvalue></mapping>
+            <mapping><value>27</value><newvalue>Online</newvalue></mapping>
+            <mapping><value>28</value><newvalue>Offline</newvalue></mapping>
+            <mapping><value>29</value><newvalue>Locked</newvalue></mapping>
+            <mapping><value>30</value><newvalue>Enabled</newvalue></mapping>
+            <mapping><value>31</value><newvalue>Disabled</newvalue></mapping>
+            <mapping><value>32</value><newvalue>Balancing</newvalue></mapping>
+            <mapping><value>33</value><newvalue>To be recovered</newvalue></mapping>
+            <mapping><value>34</value><newvalue>Interrupted</newvalue></mapping>
+            <mapping><value>35</value><newvalue>Invalid</newvalue></mapping>
+            <mapping><value>36</value><newvalue>Not start</newvalue></mapping>
+            <mapping><value>37</value><newvalue>Queuing</newvalue></mapping>
+            <mapping><value>38</value><newvalue>Stopped</newvalue></mapping>
+            <mapping><value>39</value><newvalue>Copying</newvalue></mapping>
+            <mapping><value>40</value><newvalue>Completed</newvalue></mapping>
+            <mapping><value>41</value><newvalue>Paused</newvalue></mapping>
+            <mapping><value>42</value><newvalue>Reverse synchronizing</newvalue></mapping>
+            <mapping><value>43</value><newvalue>Activated</newvalue></mapping>
+            <mapping><value>44</value><newvalue>Restore</newvalue></mapping>
+            <mapping><value>45</value><newvalue>Inactive</newvalue></mapping>
+            <mapping><value>46</value><newvalue>Idle</newvalue></mapping>
+            <mapping><value>47</value><newvalue>Powering off</newvalue></mapping>
+            <mapping><value>48</value><newvalue>Charging</newvalue></mapping>
+            <mapping><value>49</value><newvalue>Charging completed</newvalue></mapping>
+            <mapping><value>50</value><newvalue>Discharging</newvalue></mapping>
+            <mapping><value>51</value><newvalue>Upgrading</newvalue></mapping>
+            <mapping><value>52</value><newvalue>Power Lost</newvalue></mapping>
+            <mapping><value>53</value><newvalue>Initializing</newvalue></mapping>
+            <mapping><value>54</value><newvalue>Apply change</newvalue></mapping>
+            <mapping><value>55</value><newvalue>Online disable</newvalue></mapping>
+            <mapping><value>56</value><newvalue>Offline disable</newvalue></mapping>
+            <mapping><value>57</value><newvalue>Online frozen</newvalue></mapping>
+            <mapping><value>58</value><newvalue>Offline frozen</newvalue></mapping>
+            <mapping><value>59</value><newvalue>Closed</newvalue></mapping>
+            <mapping><value>60</value><newvalue>Removing</newvalue></mapping>
+            <mapping><value>61</value><newvalue>In service</newvalue></mapping>
+            <mapping><value>62</value><newvalue>Out of service</newvalue></mapping>
+            <mapping><value>63</value><newvalue>Running normal</newvalue></mapping>
+            <mapping><value>64</value><newvalue>Running fail</newvalue></mapping>
+            <mapping><value>65</value><newvalue>Running success</newvalue></mapping>
+            <mapping><value>66</value><newvalue>Running success</newvalue></mapping>
+            <mapping><value>67</value><newvalue>Running failed</newvalue></mapping>
+            <mapping><value>68</value><newvalue>Waiting</newvalue></mapping>
+            <mapping><value>69</value><newvalue>Canceling</newvalue></mapping>
+            <mapping><value>70</value><newvalue>Canceled</newvalue></mapping>
+            <mapping><value>71</value><newvalue>About to synchronize</newvalue></mapping>
+            <mapping><value>72</value><newvalue>Synchronizing data</newvalue></mapping>
+            <mapping><value>73</value><newvalue>Failed to synchronize</newvalue></mapping>
+            <mapping><value>74</value><newvalue>Fault</newvalue></mapping>
+            <mapping><value>75</value><newvalue>Migrating</newvalue></mapping>
+            <mapping><value>76</value><newvalue>Migrated</newvalue></mapping>
+            <mapping><value>77</value><newvalue>Activating</newvalue></mapping>
+            <mapping><value>78</value><newvalue>Deactivating</newvalue></mapping>
+            <mapping><value>79</value><newvalue>Start failed</newvalue></mapping>
+            <mapping><value>80</value><newvalue>Stop failed</newvalue></mapping>
+            <mapping><value>81</value><newvalue>Decommissioning</newvalue></mapping>
+            <mapping><value>82</value><newvalue>Decommissioned</newvalue></mapping>
+            <mapping><value>83</value><newvalue>Recommissioning</newvalue></mapping>
+            <mapping><value>84</value><newvalue>Replacing node</newvalue></mapping>
+            <mapping><value>85</value><newvalue>Scheduling</newvalue></mapping>
+            <mapping><value>86</value><newvalue>Pausing</newvalue></mapping>
+            <mapping><value>87</value><newvalue>Suspending</newvalue></mapping>
+            <mapping><value>88</value><newvalue>Suspended</newvalue></mapping>
+            <mapping><value>89</value><newvalue>Overload</newvalue></mapping>
+            <mapping><value>90</value><newvalue>To be switch</newvalue></mapping>
+            <mapping><value>91</value><newvalue>Switching</newvalue></mapping>
+            <mapping><value>92</value><newvalue>To be cleanup</newvalue></mapping>
+            <mapping><value>93</value><newvalue>Forced start</newvalue></mapping>
+            <mapping><value>94</value><newvalue>Error</newvalue></mapping>
+            <mapping><value>95</value><newvalue>Job completed</newvalue></mapping>
+            <mapping><value>96</value><newvalue>Partition Migrating</newvalue></mapping>
+            <mapping><value>97</value><newvalue>Mount</newvalue></mapping>
+            <mapping><value>98</value><newvalue>Umount</newvalue></mapping>
+            <mapping><value>99</value><newvalue>INSTALLING</newvalue></mapping>
+            <mapping><value>100</value><newvalue>To Be Synchronized</newvalue></mapping>
+            <mapping><value>101</value><newvalue>Connecting</newvalue></mapping>
+            <mapping><value>102</value><newvalue>Service Switching</newvalue></mapping>
+            <mapping><value>103</value><newvalue>Power-on failed</newvalue></mapping>
+            <mapping><value>104</value><newvalue>REPAIRING</newvalue></mapping>
+            <mapping><value>105</value><newvalue>abnormal</newvalue></mapping>
+            <mapping><value>106</value><newvalue>Deleting</newvalue></mapping>
+            <mapping><value>107</value><newvalue>Modifying</newvalue></mapping>
+            <mapping><value>108</value><newvalue>Running(clearing data)</newvalue></mapping>
+            <mapping><value>109</value><newvalue>Running(synchronizing data)</newvalue></mapping>
+            <mapping><value>110</value><newvalue>Standby</newvalue></mapping>
+            <mapping><value>111</value><newvalue>STOPPING</newvalue></mapping>
+            <mapping><value>112</value><newvalue>RESTORE FAULT</newvalue></mapping>
+            <mapping><value>113</value><newvalue>Cut Over</newvalue></mapping>
+            <mapping><value>114</value><newvalue>Erasing</newvalue></mapping>
+            <mapping><value>115</value><newvalue>Verifying</newvalue></mapping>
+            <mapping><value>119</value><newvalue>Creating</newvalue></mapping>
+        </mappings>
+    </value_map>
+</value_maps>
+</zabbix_export>

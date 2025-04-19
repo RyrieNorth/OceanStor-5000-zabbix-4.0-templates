@@ -1,0 +1,8 @@
+# 采集存储 10.70.1.193 信息
+*/2 * * * * python2 /opt/os5000/get_snmp_info.py 10.70.1.193 > /tmp/10.70.1.193_snmp_info_all.json
+
+# 采集存储 10.70.1.250 信息
+*/2 * * * * python2 /opt/os5000/get_snmp_info.py 10.70.1.250 > /tmp/10.70.1.250_snmp_info_all.json
+
+# 采集存储 10.70.1.251 信息
+*/5 * * * * python2 /opt/os5000/get_snmp_info.py 10.70.1.251 > /tmp/10.70.1.251_snmp_info_all.json
