@@ -50,18 +50,35 @@ bash discover_psu.sh 172.16.100.100 > psu_name.sh && chmod +x psu_name.sh
 # 信息采集脚本（centos默认python环境为python2.7）
 python2 get_snmp_info.py 172.16.100.100 > snmp_info_all.json
 
+python2 get_snmp_info.py -u northsky -l authPriv -a SHA -A Aa123456\! -x AES -X Aa123456\!\! 172.16.100.100
+python2 get_snmp_info.py -u northsky -l authPriv -A Aa123456\! -X Aa123456\!\! 172.16.100.100
+
 # 查看帮助
 [root@localhost ~]# python get_snmp_info.py -h
-usage: get_snmp_info.py [-h] <host>
+usage: get_snmp_info.py [-h] [-u USER] [-l LEVEL] [-a AUTH_PROTOCOL]
+                        [-A AUTH_PASS] [-x PRIV_PROTOCOL] [-X PRIV_PASS]
+                        [--delay DELAY]
+                        <host>
 
 SNMP PSU、DISK、ETH、FC 信息采集器
 
 positional arguments:
-  <host>      目标设备IP地址
+  <host>                目标设备IP地址
 
 optional arguments:
-  -h, --help  show this help message and exit
-
+  -h, --help            show this help message and exit
+  -u USER, --user USER  SNMP v3 用户名
+  -l LEVEL, --level LEVEL
+                        认证级别：noAuthNoPriv、authNoPriv、authPriv
+  -a AUTH_PROTOCOL, --auth_protocol AUTH_PROTOCOL
+                        认证协议：MD5 或 SHA
+  -A AUTH_PASS, --auth_pass AUTH_PASS
+                        认证密码
+  -x PRIV_PROTOCOL, --priv_protocol PRIV_PROTOCOL
+                        加密协议：DES 或 AES
+  -X PRIV_PASS, --priv_pass PRIV_PASS
+                        加密密码
+  --delay DELAY         线程启动间隔时间（秒）
 ```
 
 ## 导入 zabbix UserParameters
