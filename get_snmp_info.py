@@ -71,9 +71,9 @@ def parse_args():
     parser.add_argument('-u', '--user', default='test_user', help='SNMP v3 用户名')
     parser.add_argument('-l', '--level', default='authPriv', help='认证级别：noAuthNoPriv、authNoPriv、authPriv')
     parser.add_argument('-a', '--auth_protocol', default='SHA', help='认证协议：MD5 或 SHA')
-    parser.add_argument('-A', '--auth_pass', default='Gzbbn@cloud', help='认证密码')
+    parser.add_argument('-A', '--auth_pass', default='Aa123456!', help='认证密码')
     parser.add_argument('-x', '--priv_protocol', default='AES', help='加密协议：DES 或 AES')
-    parser.add_argument('-X', '--priv_pass', default='Gzbbn@Cloud', help='加密密码')
+    parser.add_argument('-X', '--priv_pass', default='Aa123456!', help='加密密码')
 
     parser.add_argument('--delay', type=float, default=1.0, help='线程启动间隔时间（秒）')
 
